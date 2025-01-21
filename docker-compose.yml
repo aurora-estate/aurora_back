@@ -4,7 +4,7 @@ services:
     container_name: aurora_back
     build: .
     user: 1000:1000
-    image: vadimbrovarenko/restkey-strapi:latest
+     image: strapi:latest
     restart: unless-stopped
     env_file: .env
     environment:
