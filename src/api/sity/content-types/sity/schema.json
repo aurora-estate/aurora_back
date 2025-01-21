@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sities",
+  "info": {
+    "singularName": "sity",
+    "pluralName": "sities",
+    "displayName": "Сity"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Coord_lng": {
+      "type": "string"
+    },
+    "Coord_lat": {
+      "type": "string"
+    }
+  }
+}

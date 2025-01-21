@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_header_header_links",
+  "info": {
+    "displayName": "Header_links"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "string",
+      "required": true
+    },
+    "isTg": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "section_yours",
+  "info": {
+    "singularName": "section-your",
+    "pluralName": "section-yours",
+    "displayName": "Section_your",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Desc": {
+      "type": "richtext",
+      "required": true
+    },
+    "blocks_yours": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blocks-your.blocks-your"
+    }
+  }
+}

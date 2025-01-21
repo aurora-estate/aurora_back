@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "ui_configs",
+  "info": {
+    "singularName": "ui-config",
+    "pluralName": "ui-configs",
+    "displayName": "UI_Config"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Config": {
+      "type": "json"
+    }
+  }
+}

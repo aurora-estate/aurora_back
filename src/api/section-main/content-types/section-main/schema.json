@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "section_mains",
+  "info": {
+    "singularName": "section-main",
+    "pluralName": "section-mains",
+    "displayName": "Section_main",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Header_link": {
+      "displayName": "Header_links",
+      "type": "component",
+      "repeatable": true,
+      "component": "header.header-links"
+    },
+    "Header_post": {
+      "displayName": "Header_posts",
+      "type": "component",
+      "repeatable": true,
+      "component": "header.header-posts"
+    },
+    "Main_title": {
+      "type": "string",
+      "required": true,
+      "default": "Заголовок"
+    }
+  }
+}

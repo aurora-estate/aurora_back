@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blocks_yours",
+  "info": {
+    "singularName": "blocks-your",
+    "pluralName": "blocks-yours",
+    "displayName": "Blocks_your"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Desc": {
+      "type": "text"
+    },
+    "Main_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Secondary_img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "t-1",
+        "t-2",
+        "t-3",
+        "t-4"
+      ],
+      "default": "t-1",
+      "required": true
+    },
+    "White_bg": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "section_abouts",
+  "info": {
+    "singularName": "section-about",
+    "pluralName": "section-abouts",
+    "displayName": "Section_about"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Desc": {
+      "type": "richtext",
+      "required": true
+    },
+    "Slider": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

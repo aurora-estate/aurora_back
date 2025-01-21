@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "order_configs",
+  "info": {
+    "singularName": "order-config",
+    "pluralName": "order-configs",
+    "displayName": "Order_config"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Desc": {
+      "type": "string"
+    }
+  }
+}

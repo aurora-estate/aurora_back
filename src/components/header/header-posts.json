@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_header_header_posts",
+  "info": {
+    "displayName": "Header_posts"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Desc": {
+      "type": "text",
+      "required": true
+    },
+    "Link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
