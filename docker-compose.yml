@@ -28,8 +28,8 @@ services:
       - ./public/uploads:/opt/app/public/uploads
     ports:
       - '1337:1337'
-  networks:
-      - strapi
+    networks:
+        - strapi
     depends_on:
       - strapiDB
 
@@ -48,6 +48,7 @@ services:
      - '127.0.0.1:5455:5432'
     networks:
       - strapi
+      
 volumes:
   strapi-data:
 networks:
