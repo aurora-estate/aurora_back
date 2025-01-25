@@ -372,6 +372,7 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
 export interface ApiBlocksYourBlocksYour extends Struct.CollectionTypeSchema {
   collectionName: 'blocks_yours';
   info: {
+    description: '';
     displayName: 'Blocks_your';
     pluralName: 'blocks-yours';
     singularName: 'blocks-your';
@@ -402,6 +403,7 @@ export interface ApiBlocksYourBlocksYour extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    visibleMobile: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     White_bg: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
   };
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "blocks-your",
     "pluralName": "blocks-yours",
-    "displayName": "Blocks_your"
+    "displayName": "Blocks_your",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -18,24 +19,26 @@
       "type": "text"
     },
     "Main_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Secondary_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Type": {
       "type": "enumeration",
@@ -49,6 +52,10 @@
       "required": true
     },
     "White_bg": {
+      "type": "boolean",
+      "default": false
+    },
+    "visibleMobile": {
       "type": "boolean",
       "default": false
     }
