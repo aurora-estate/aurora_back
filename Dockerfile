@@ -1,4 +1,3 @@
-
 FROM node:20.18-slim
 # Installing libvips-dev for sharp Compatibility
 RUN apt-get update
