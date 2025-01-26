@@ -381,6 +381,7 @@ export interface ApiBlocksYourBlocksYour extends Struct.CollectionTypeSchema {
     draftAndPublish: false;
   };
   attributes: {
+    Color: Schema.Attribute.String & Schema.Attribute.DefaultTo<'#ffffff'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -393,9 +394,6 @@ export interface ApiBlocksYourBlocksYour extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     Main_img: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     publishedAt: Schema.Attribute.DateTime;
-    Secondary_img: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
     Title: Schema.Attribute.String;
     Type: Schema.Attribute.Enumeration<['t-1', 't-2', 't-3', 't-4']> &
       Schema.Attribute.Required &
@@ -404,7 +402,6 @@ export interface ApiBlocksYourBlocksYour extends Struct.CollectionTypeSchema {
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     visibleMobile: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
-    White_bg: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
   };
 }
 

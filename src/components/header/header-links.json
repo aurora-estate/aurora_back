@@ -1,7 +1,8 @@
 {
   "collectionName": "components_header_header_links",
   "info": {
-    "displayName": "Header_links"
+    "displayName": "Header_links",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -13,9 +14,17 @@
       "type": "string",
       "required": true
     },
-    "isTg": {
+    "isIcon": {
       "type": "boolean",
       "default": true
+    },
+    "Icon": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

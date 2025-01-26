@@ -3,10 +3,12 @@ import type { Schema, Struct } from '@strapi/strapi';
 export interface HeaderHeaderLinks extends Struct.ComponentSchema {
   collectionName: 'components_header_header_links';
   info: {
+    description: '';
     displayName: 'Header_links';
   };
   attributes: {
-    isTg: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    Icon: Schema.Attribute.Media<'images' | 'files'>;
+    isIcon: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
     Link: Schema.Attribute.String & Schema.Attribute.Required;
     Title: Schema.Attribute.String & Schema.Attribute.Required;
   };

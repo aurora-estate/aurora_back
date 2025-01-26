@@ -29,17 +29,6 @@
         "audios"
       ]
     },
-    "Secondary_img": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "Type": {
       "type": "enumeration",
       "enum": [
@@ -51,13 +40,13 @@
       "default": "t-1",
       "required": true
     },
-    "White_bg": {
-      "type": "boolean",
-      "default": false
-    },
     "visibleMobile": {
       "type": "boolean",
       "default": false
+    },
+    "Color": {
+      "type": "string",
+      "default": "#ffffff"
     }
   }
 }
