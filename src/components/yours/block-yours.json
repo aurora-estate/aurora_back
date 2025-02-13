@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_yours_block_yours",
+  "info": {
+    "displayName": "Block_yours",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Desc": {
+      "type": "string"
+    },
+    "Main_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "t-1",
+        "t-2",
+        "t-3",
+        "t-4"
+      ],
+      "default": "t-1"
+    },
+    "visibleMobile": {
+      "type": "boolean"
+    },
+    "Color": {
+      "type": "string",
+      "default": "#ffffff"
+    }
+  }
+}

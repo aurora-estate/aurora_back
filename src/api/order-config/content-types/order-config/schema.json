@@ -4,7 +4,8 @@
   "info": {
     "singularName": "order-config",
     "pluralName": "order-configs",
-    "displayName": "Order_config"
+    "displayName": "Order_config",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -13,6 +14,21 @@
   "attributes": {
     "Desc": {
       "type": "string"
+    },
+    "City": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order.city"
+    },
+    "Service_type": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order.service-type"
+    },
+    "Object_category": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order.object-category"
     }
   }
 }

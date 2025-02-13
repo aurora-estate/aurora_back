@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sity",
     "pluralName": "sities",
-    "displayName": "Сity"
+    "displayName": "Сity",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
