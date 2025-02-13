@@ -8,6 +8,7 @@ RUN chown  node:node /opt
 COPY ./package.json ./yarn.lock ./
 ENV PATH /opt/node_modules/.bin:$PATH
 RUN yarn config set network-timeout 600000 -g
+RUN chown -R node:node /opt
 USER node
 RUN yarn install
 RUN mkdir /opt/app
