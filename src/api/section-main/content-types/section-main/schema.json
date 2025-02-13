@@ -28,6 +28,11 @@
       "type": "string",
       "required": true,
       "default": "Заголовок"
+    },
+    "Main_bg": {
+      "type": "component",
+      "repeatable": false,
+      "component": "main.main-background"
     }
   }
 }

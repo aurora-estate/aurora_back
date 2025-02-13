@@ -434,6 +434,7 @@ export interface ApiLogoLogo extends Struct.SingleTypeSchema {
 export interface ApiOrderConfigOrderConfig extends Struct.SingleTypeSchema {
   collectionName: 'order_configs';
   info: {
+    description: '';
     displayName: 'Order_config';
     pluralName: 'order-configs';
     singularName: 'order-config';
@@ -442,6 +443,7 @@ export interface ApiOrderConfigOrderConfig extends Struct.SingleTypeSchema {
     draftAndPublish: false;
   };
   attributes: {
+    City: Schema.Attribute.Component<'order.city', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -452,6 +454,40 @@ export interface ApiOrderConfigOrderConfig extends Struct.SingleTypeSchema {
       'api::order-config.order-config'
     > &
       Schema.Attribute.Private;
+    Object_category: Schema.Attribute.Component<'order.object-category', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    Service_type: Schema.Attribute.Component<'order.service-type', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPageSeoPageSeo extends Struct.SingleTypeSchema {
+  collectionName: 'page_seos';
+  info: {
+    description: '';
+    displayName: 'Page_seo';
+    pluralName: 'page-seos';
+    singularName: 'page-seo';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    customMetaTags: Schema.Attribute.JSON;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::page-seo.page-seo'
+    > &
+      Schema.Attribute.Private;
+    metaDescription: Schema.Attribute.Text;
+    metaKeywords: Schema.Attribute.Text;
+    metaTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -512,6 +548,7 @@ export interface ApiSectionMainSectionMain extends Struct.SingleTypeSchema {
       'api::section-main.section-main'
     > &
       Schema.Attribute.Private;
+    Main_bg: Schema.Attribute.Component<'main.main-background', false>;
     Main_title: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'\u0417\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A'>;
@@ -534,10 +571,7 @@ export interface ApiSectionYourSectionYour extends Struct.SingleTypeSchema {
     draftAndPublish: false;
   };
   attributes: {
-    blocks_yours: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::blocks-your.blocks-your'
-    >;
+    blocks_yours: Schema.Attribute.Component<'yours.block-yours', true>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -558,6 +592,7 @@ export interface ApiSectionYourSectionYour extends Struct.SingleTypeSchema {
 export interface ApiSitySity extends Struct.CollectionTypeSchema {
   collectionName: 'sities';
   info: {
+    description: '';
     displayName: '\u0421ity';
     pluralName: 'sities';
     singularName: 'sity';
@@ -1122,6 +1157,7 @@ declare module '@strapi/strapi' {
       'api::blocks-your.blocks-your': ApiBlocksYourBlocksYour;
       'api::logo.logo': ApiLogoLogo;
       'api::order-config.order-config': ApiOrderConfigOrderConfig;
+      'api::page-seo.page-seo': ApiPageSeoPageSeo;
       'api::section-about.section-about': ApiSectionAboutSectionAbout;
       'api::section-main.section-main': ApiSectionMainSectionMain;
       'api::section-your.section-your': ApiSectionYourSectionYour;

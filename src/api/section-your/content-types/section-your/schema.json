@@ -17,9 +17,9 @@
       "required": true
     },
     "blocks_yours": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::blocks-your.blocks-your"
+      "type": "component",
+      "repeatable": true,
+      "component": "yours.block-yours"
     }
   }
 }
